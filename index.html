@@ -12,6 +12,7 @@
   <body>
     <dov id ="map"></div>
     
+    <!--
     <form>
       <p>
         <input type="button" value="ROADMAP" onclick"changeMapType('roadmap')">
@@ -20,6 +21,7 @@
         <input type="button" value="TERRAIN" onclick="changeMapType('terrain')">
       </p>
     </form>
+    -->
     
     <script type="text/javascript">
       function initMap(){
@@ -32,12 +34,15 @@
           position: {lat:35.462906, lng:139.330869},
           map: map
         });
+        
+        <!--
         var infoWindow = new google.maps.InfoWindow({
           content: '東京工芸大学',
           position: {lat:35.462906, lng:139.330869},
           pixelOffset: new google.maps.Size(0, -50)
         });
         infoWindow.setup(map);
+        -->
       }
       
       function changeMapType(type){
